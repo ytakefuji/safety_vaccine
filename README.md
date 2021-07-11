@@ -2,6 +2,7 @@
 
 The latest data of VAERS (Vaccine Adverse Event Reporting System) dataset is 
 available at:
+
 https://vaers.hhs.gov/eSubDownload/index.jsp?fn=2021VAERSData.zip
 
 # How to run vaers.py
