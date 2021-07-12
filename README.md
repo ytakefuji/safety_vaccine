@@ -5,7 +5,8 @@ available at:
 
 https://vaers.hhs.gov/eSubDownload/index.jsp?fn=2021VAERSData.zip
 
-# vaers.py shows an intersection operation of set operations.
+# set operations
+vaers.py shows a good example of intersection operation.
 
 <img src="set.png" width=280 height=210 >
 
