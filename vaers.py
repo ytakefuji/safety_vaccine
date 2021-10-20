@@ -1,31 +1,28 @@
 import pandas as pd
+
 d=pd.read_csv('2021VAERSDATA.csv',encoding='cp1252')
 d['DIED'].fillna("N",inplace=True)
+IDs=d.loc[d.DIED=='Y','VAERS_ID']
 print("total instances: ",len(d['DIED']))
-print("non-deaths(N) or deaths(Y)")
-print(d['DIED'].value_counts())
+print("total deaths",len(IDs))
 
 vax=pd.read_csv('2021VAERSVAX.csv',encoding='cp1252')
 
 NOVIDs=vax.loc[vax.VAX_MANU=="NOVARTIS VACCINES AND DIAGNOSTICS",'VAERS_ID']
 print("NOVIDs instances: ",len(NOVIDs))
+deathNOV=set(IDs).intersection(NOVIDs)
+print("NOVIDs deaths: ",len(deathNOV))
+print("NOV death per instance",round(len(deathNOV)/len(NOVIDs),3))
 
 MODERNAIDs=vax.loc[vax.VAX_MANU=="MODERNA",'VAERS_ID']
 print("MODERNAIDs instances: ",len(MODERNAIDs))
+deathMODERNA=set(IDs).intersection(MODERNAIDs)
+print("MODERNA deaths",len(deathMODERNA))
+print("MODERNA",round(len(deathMODERNA)/len(MODERNAIDs),3))
 
 PFIZERIDs=vax.loc[vax.VAX_MANU=="PFIZER\BIONTECH",'VAERS_ID']
 print("PFIZERIDs instances: ",len(PFIZERIDs))
-
-d['DIED'].fillna("N",inplace=True)
-IDs=d.loc[d.DIED=='Y','VAERS_ID']
-
-matchedNOV=set(IDs).intersection(NOVIDs)
-print("intersect NOV ",len(matchedNOV))
-print("NOV",round(len(matchedNOV)/len(NOVIDs),3))
-matchedMODERNA=set(IDs).intersection(MODERNAIDs)
-print("intersect MODERNA ",len(matchedMODERNA))
-print("MODERNA",round(len(matchedMODERNA)/len(MODERNAIDs),3))
-matchedPFIZER=set(IDs).intersection(PFIZERIDs)
-print("intersect PFIZER ",len(matchedPFIZER))
-print("PFIZER",round(len(matchedPFIZER)/len(PFIZERIDs),3))
+deathPFIZER=set(IDs).intersection(PFIZERIDs)
+print("PFIZER deaths",len(deathPFIZER))
+print("PFIZER",round(len(deathPFIZER)/len(PFIZERIDs),3))
 
