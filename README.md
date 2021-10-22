@@ -32,5 +32,20 @@ MODERNA 0.013
 intersect PFIZER  2235
 PFIZER 0.012
 </pre>
+# How to run pfizerAge.py to generate a pfizer.csv file.
+<pre>
+$ python pfizerAge.py
+</pre>
+
+# How to run modernaAge.py to generate a moderna.csv file.
+<pre>
+$ python modernaAge.py
+</pre>
+
+# How to calculate safety thresholds of PFIZER and MODERNA vaccines by age
+<pre>
+$ python deathperinstance.py
+</pre>
+
 
 
