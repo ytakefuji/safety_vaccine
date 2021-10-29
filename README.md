@@ -11,7 +11,7 @@ https://vaers.hhs.gov/eSubDownload/index.jsp?fn=2021VAERSData.zip
 vaers.py shows a good example of intersection operation. 
 The following figure shows what is intersection operation.
 
-<img src="set.jpg" width=350 height=280 >
+<img src="set.jpg" width=700 height=560 >
 
 # How to run vaers.py
 
