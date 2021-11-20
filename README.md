@@ -48,8 +48,8 @@ $ python deathperinstance.py
 
 # Subtraction operation
 
-A.difference(B)
+set(A).difference(B)
 
 # Union operation
 
-A.union(B)
+set(A).union(B)
