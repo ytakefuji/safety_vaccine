@@ -46,5 +46,6 @@ $ python modernaAge.py
 $ python deathperinstance.py
 </pre>
 
+# Subtraction
 
-
+A.difference(B)
