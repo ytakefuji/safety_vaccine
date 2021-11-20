@@ -46,6 +46,10 @@ $ python modernaAge.py
 $ python deathperinstance.py
 </pre>
 
-# Subtraction
+# Subtraction operation
 
 A.difference(B)
+
+# Union operation
+
+A.union(B)
