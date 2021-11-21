@@ -25,12 +25,6 @@ total deaths 8926
 NOVIDs instances:  1202
 NOVIDs deaths:  4
 NOV death per instance 0.003328
-MODERNAIDs instances:  310812
-MODERNA deaths 3652
-MODERNA 0.01175
-PFIZERIDs instances:  298225
-PFIZER deaths 3973
-PFIZER 0.013322
 MODERNA+PFIZER: 905
 MODERNA+PFIZER death: 4
 MODERNA+PFIZER death per instance: 0.00442
