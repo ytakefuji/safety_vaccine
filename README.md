@@ -62,3 +62,8 @@ set(A).difference(B)
 # Union operation
 
 set(A).union(B)
+
+# Symmetric difference (ExclusiveOR)
+
+set(A).symmetric_difference(B)
+
