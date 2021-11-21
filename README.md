@@ -16,6 +16,7 @@ The following figure shows what is intersection operation.
 # How to run vaers.py
 
 <pre>
+0. Download 2021VAERSData.zip
 1. Unzip 2021VAERSData.zip file
 2. Run vaers.py program
 $ python vaers.py
