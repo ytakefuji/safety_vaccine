@@ -15,16 +15,16 @@ print("NOVIDs deaths: ",len(deathNOV))
 print("NOV death per instance",round(len(deathNOV)/len(NOVIDs),6))
 
 MODERNAIDs=vax.loc[vax.VAX_MANU=="MODERNA",'VAERS_ID']
-print("MODERNAIDs instances: ",len(MODERNAIDs))
+#print("MODERNAIDs instances: ",len(MODERNAIDs))
 deathMODERNA=set(IDs).intersection(MODERNAIDs)
-print("MODERNA deaths",len(deathMODERNA))
-print("MODERNA",round(len(deathMODERNA)/len(MODERNAIDs),6))
+#print("MODERNA deaths",len(deathMODERNA))
+#print("MODERNA",round(len(deathMODERNA)/len(MODERNAIDs),6))
 
 PFIZERIDs=vax.loc[vax.VAX_MANU=="PFIZER\BIONTECH",'VAERS_ID']
-print("PFIZERIDs instances: ",len(PFIZERIDs))
+#print("PFIZERIDs instances: ",len(PFIZERIDs))
 deathPFIZER=set(IDs).intersection(PFIZERIDs)
-print("PFIZER deaths",len(deathPFIZER))
-print("PFIZER",round(len(deathPFIZER)/len(PFIZERIDs),6))
+#print("PFIZER deaths",len(deathPFIZER))
+#print("PFIZER",round(len(deathPFIZER)/len(PFIZERIDs),6))
 
 M_P=set(MODERNAIDs).intersection(PFIZERIDs)
 M_Pdeath=set(deathMODERNA).intersection(deathPFIZER)
