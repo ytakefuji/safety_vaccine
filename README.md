@@ -13,6 +13,23 @@ The following figure shows what is intersection operation.
 
 <img src="https://github.com/ytakefuji/safety_vaccine/raw/main/set.jpg" width=700 height=560 >
 
+# How to install vaers
+On WSL on Windows, MacOS, or Linux operating systems:
+
+$ pip install vaers
+
+On Windows 11 or 10:
+
+$ pip install vaers --force-reinstall --no-cache-dir --no-binary :all:
+
+# How to run vaers
+$ vaers
+
+or
+
+$ vaers 2022
+
+
 # How to run vaers.py
 
 <pre>
