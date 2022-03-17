@@ -9,6 +9,17 @@ https://vaers.hhs.gov/eSubDownload/index.jsp?fn=2021VAERSData.zip
 
 # set operations
 vaers.py shows a good example of intersection operation. 
+
+set(A).intersection(B)
+
+set(A).symmetric_difference(B)
+
+set(A).difference(B)
+
+set(A).union(B)
+
+
+
 The following figure shows what is intersection operation.
 
 <img src="https://github.com/ytakefuji/safety_vaccine/raw/main/set.jpg" width=700 height=560 >
