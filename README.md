@@ -17,9 +17,19 @@ set(A).symmetric_difference(B)
 set(A).difference(B)
 
 set(A).union(B)
-
-
-
+<pre>
+ set([1,2,5]).symmetric_difference([1,2,9,4,8,9])
+ {4, 5, 8, 9}
+ 
+ set([1,2,5]).difference([1,2,9,4,8,9])
+ {5}
+ 
+ set([1,2,5]).intersection([1,2,9,4,8,9])
+ {1, 2}
+ 
+ set([1,2,5]).union([1,2,9,4,8,9])
+ {1, 2, 4, 5, 8, 9}
+</pre>
 The following figure shows what is intersection operation.
 
 <img src="https://github.com/ytakefuji/safety_vaccine/raw/main/set.jpg" width=700 height=560 >
