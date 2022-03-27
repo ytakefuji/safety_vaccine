@@ -1,6 +1,8 @@
 # safety_vaccine 
 [![Open in Code Ocean](https://codeocean.com/codeocean-assets/badge/open-in-code-ocean.svg)](https://codeocean.com/capsule/7deeac37-cbb7-4969-ad30-dcb2f423fc47/tree)
 
+DOI: https://doi.org/10.24433/CO.6387836.v1
+
 This is under review.
 
 The latest data of VAERS (Vaccine Adverse Event Reporting System) dataset is 
