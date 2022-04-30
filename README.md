@@ -3,7 +3,7 @@
 
 DOI: https://doi.org/10.24433/CO.6387836.v1
 
-This is under review.
+Takefuji Y. Set Operations in Python for Translational Medicine. International Journal of Translational Medicine. 2022; 2(2):174-185. https://doi.org/10.3390/ijtm2020015 
 
 The latest data of VAERS (Vaccine Adverse Event Reporting System) dataset is 
 available at:
