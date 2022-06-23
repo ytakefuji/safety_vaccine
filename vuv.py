@@ -1,6 +1,8 @@
 import pandas as pd
 import sys
-d=pd.read_csv('Rates_of_COVID-19_Cases_or_Deaths_by_Age_Group_and_Vaccination_Status.csv')
+import subprocess as sp
+sp.call('wget -nc https://data.cdc.gov/api/views/3rge-nu2a/rows.csv',shell=True)
+d=pd.read_csv('rows.csv')
 months=d.month.unique()
 days=[]
 #age=18-29,30-49,50-64,65-79,80+
@@ -26,5 +28,5 @@ plt.plot(days,u,'--k')
 plt.xticks(days[::4],rotation=90)
 plt.legend(('vaccinated','unvaccinated'))
 plt.title('COVID-19 mortality for '+age+' age group')
-plt.savefig('result.png',bbox_inches='tight')
-plt.show()
+plt.savefig(age+'.png',bbox_inches='tight')
+plt.close()
